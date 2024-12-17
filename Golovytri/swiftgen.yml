@@ -1,0 +1,22 @@
+xcassets:
+  - inputs:
+    - Golovytri/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Golovytri/Resources/Images/Images.generated.swift
+  - inputs:
+    - Golovytri/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Golovytri/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: Golovytri/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Golovytri/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
