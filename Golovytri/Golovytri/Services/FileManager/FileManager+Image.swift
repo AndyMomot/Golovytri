@@ -24,4 +24,10 @@ extension FileManagerService {
             }
         }
     }
+    
+    func fetchImage(with id: String) async -> Data? {
+        let path = FileManagerService.Keys.image(id: id).path
+        let imageData = getFile(forPath: path)
+        return imageData
+    }
 }

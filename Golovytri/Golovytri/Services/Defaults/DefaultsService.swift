@@ -13,6 +13,12 @@ final class DefaultsService {
 }
 
 extension DefaultsService {
+    func removeAll() {
+        if let bundleIdentifier = Bundle.main.bundleIdentifier {
+            standard.removePersistentDomain(forName: bundleIdentifier)
+        }
+    }
+    
     var flow: RootContentView.ViewState {
         get {
             let name = standard.string(forKey: Keys.flow.rawValue) ?? ""
@@ -25,11 +31,10 @@ extension DefaultsService {
 }
  
 extension DefaultsService {
-    var tasks: [TaskModel] {
+    var people: [Person] {
         get {
-            guard let data = standard.object(forKey: Keys.tasks.rawValue) as? Data,
-                  let items = try? JSONDecoder().decode([TaskModel].self, from: data)
-            else {
+            guard let data = standard.data(forKey: Keys.people.rawValue),
+                  let items = try? JSONDecoder().decode([Person].self, from: data) else {
                 return []
             }
             
@@ -37,16 +42,8 @@ extension DefaultsService {
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
-                standard.setValue(data, forKey: Keys.tasks.rawValue)
+                standard.set(data, forKey: Keys.people.rawValue)
             }
-        }
-    }
-}
-
-extension DefaultsService {
-    func removeAll() {
-        if let bundleIdentifier = Bundle.main.bundleIdentifier {
-            standard.removePersistentDomain(forName: bundleIdentifier)
         }
     }
 }
@@ -55,6 +52,6 @@ extension DefaultsService {
 extension DefaultsService {
     enum Keys: String {
         case flow
-        case tasks
+        case people
     }
 }
