@@ -17,8 +17,8 @@ struct InvertedPyramidView: View {
                 HStack(spacing: 10) {
                     ForEach(level, id: \.self) { person in
                         var opacity: CGFloat {
-                            guard let priority else { return 1 }
-                            return person.priority == self.priority ? 1 : 0.5
+                            guard priority != nil else { return 1 }
+                            return person.priority == self.priority ? 1 : 0.2
                         }
                         
                         TreeCell(person: person)

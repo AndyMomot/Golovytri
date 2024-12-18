@@ -28,12 +28,19 @@ struct TreePriorityPicker: View {
             
             if showOptions {
                 ForEach(priorities, id: \.rawValue) { priority in
+                    let isSelected = selectedPriority == priority
                     Button {
                         didSelect(priority: priority)
                     } label: {
                         Circle()
                             .fill(getColor(for: priority))
                             .frame(width: 16)
+                            .overlay {
+                                if isSelected {
+                                    Circle()
+                                        .stroke(.darkBlue, lineWidth: 1)
+                                }
+                            }
                     }
                 }
             }

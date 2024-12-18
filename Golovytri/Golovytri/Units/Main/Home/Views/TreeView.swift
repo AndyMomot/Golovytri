@@ -29,8 +29,6 @@ struct TreeView: View {
                     
                     InvertedPyramidView(people: people,
                                         priority: priority)
-                    
-                    
                 }
                 .overlay {
                     VStack {
@@ -59,6 +57,26 @@ struct TreeView: View {
         
             .init(id: "6", priority: .low),
         .init(id: "7", priority: .medium),
-        .init(id: "8", priority: .high)
+        .init(id: "8", priority: .high),
+        
+            .init(id: "9", priority: .low),
+        .init(id: "10", priority: .medium),
+        .init(id: "11", priority: .high),
+        
+            .init(id: "12", priority: .low),
+        .init(id: "13", priority: .medium),
+        .init(id: "14", priority: .high),
+        
+            .init(id: "15", priority: .low),
+        .init(id: "16", priority: .medium),
+        .init(id: "17", priority: .high),
+        
+            .init(id: "18", priority: .low),
+        .init(id: "19", priority: .medium),
+        .init(id: "20", priority: .high),
+        
+            .init(id: "21", priority: .low),
+        .init(id: "22", priority: .medium),
+        .init(id: "23", priority: .high),
     ])
 }
