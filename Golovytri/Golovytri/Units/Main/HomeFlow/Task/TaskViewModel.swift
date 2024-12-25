@@ -14,6 +14,15 @@ extension TaskView {
         @Published var image = UIImage()
         @Published var showImagePicker = false
         
+        @Published var name = ""
+        @Published var date = Date()
+        @Published var days = ""
+        @Published var budget = ""
+        @Published var resources = ""
+        let priorityItems = PersonPriority.allCases.map { $0.rawValue }
+        @Published var priority = PersonPriority.allCases.first?.rawValue ?? ""
+        @Published var description = ""
+        
         func configure(state: TaskView.ViewState) {
             switch state {
             case .add:

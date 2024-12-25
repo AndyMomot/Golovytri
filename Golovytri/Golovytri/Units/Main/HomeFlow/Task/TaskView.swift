@@ -90,11 +90,57 @@ struct TaskView: View {
                             }
                             
                             // Fields
+                            InputField(title: "Název úlohy",
+                                       text: $viewModel.name)
                             
-                            // Drop downs
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text("Čas splatnosti")
+                                    .foregroundStyle(.darkBlue)
+                                    .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.7)
+                                
+                                ZStack {
+                                    Color.white
+                                        .cornerRadius(8, corners: .allCorners)
+                                        .overlay {
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .stroke(.darkBlue, lineWidth: 1)
+                                        }
+                                    
+                                    DatePicker("", selection: $viewModel.date,
+                                               in: Date()...,
+                                               displayedComponents: .date)
+                                    .padding(8)
+                                }
+                            }
+                            
+                            InputField(title: "Čas (dní)",
+                                       text: $viewModel.days)
+                            .keyboardType(.numberPad)
+                            
+                            InputField(title: "Rozpočet",
+                                       text: $viewModel.budget)
+                            .keyboardType(.numberPad)
+                            
+                            InputField(title: "Další zdroje",
+                                       text: $viewModel.budget)
+                            
+                            MenuPicker(title: "Priorita úlohy",
+                                       items: viewModel.priorityItems,
+                                       selection: $viewModel.priority)
+                            
+                            DynamicHeightTextField(title: "Popis úkolu",
+                                                   text: $viewModel.description)
+                            .frame(minHeight: 100)
                             
                             // Buttons
+                            
+                            NextButton(title: "Uložit") {
+                                
+                            }
                         }
+                        .padding()
                     }
                     .scrollIndicators(.never)
                 }

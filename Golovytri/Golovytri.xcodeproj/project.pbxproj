@@ -15,6 +15,9 @@
 		47E4BDB92D1C6E0F00AABFD7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */; };
 		47E4BDC42D1C6E8D00AABFD7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */; };
 		47E4BDC52D1C6E8D00AABFD7 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */; };
+		47E4BDD02D1C840E00AABFD7 /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDCC2D1C840E00AABFD7 /* DynamicHeightTextField.swift */; };
+		47E4BDD12D1C840E00AABFD7 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDCE2D1C840E00AABFD7 /* InputField.swift */; };
+		47E4BDD72D1C8D5600AABFD7 /* MenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */; };
 		47FA7A982D11790000B8ADD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A262D11790000B8ADD3 /* AppDelegate.swift */; };
 		47FA7A992D11790000B8ADD3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A272D11790000B8ADD3 /* RootViewController.swift */; };
 		47FA7A9A2D11790000B8ADD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A282D11790000B8ADD3 /* SceneDelegate.swift */; };
@@ -75,6 +78,9 @@
 		47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		47E4BDCC2D1C840E00AABFD7 /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
+		47E4BDCE2D1C840E00AABFD7 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPicker.swift; sourceTree = "<group>"; };
 		47FA795F2D11767000B8ADD3 /* Golovytri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golovytri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FA7A262D11790000B8ADD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FA7A272D11790000B8ADD3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +182,30 @@
 				47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */,
 			);
 			path = Task;
+			sourceTree = "<group>";
+		};
+		47E4BDCD2D1C840E00AABFD7 /* DynamicHeightTextField */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDCC2D1C840E00AABFD7 /* DynamicHeightTextField.swift */,
+			);
+			path = DynamicHeightTextField;
+			sourceTree = "<group>";
+		};
+		47E4BDCF2D1C840E00AABFD7 /* InputField */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDCE2D1C840E00AABFD7 /* InputField.swift */,
+			);
+			path = InputField;
+			sourceTree = "<group>";
+		};
+		47E4BDD62D1C8D5600AABFD7 /* MenuPicker */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */,
+			);
+			path = MenuPicker;
 			sourceTree = "<group>";
 		};
 		47FA79562D11767000B8ADD3 = {
@@ -284,6 +314,9 @@
 		47FA7A402D11790000B8ADD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				47E4BDD62D1C8D5600AABFD7 /* MenuPicker */,
+				47E4BDCD2D1C840E00AABFD7 /* DynamicHeightTextField */,
+				47E4BDCF2D1C840E00AABFD7 /* InputField */,
 				47FA7A352D11790000B8ADD3 /* BackButton */,
 				47FA7A372D11790000B8ADD3 /* CircularProgressBar */,
 				47FA7A392D11790000B8ADD3 /* CustomTextField */,
@@ -609,6 +642,9 @@
 				47FA7AA42D11790000B8ADD3 /* CustomTextField.swift in Sources */,
 				47FA7AA52D11790000B8ADD3 /* DotsProgressView.swift in Sources */,
 				47FA7AA62D11790000B8ADD3 /* NextButton.swift in Sources */,
+				47E4BDD72D1C8D5600AABFD7 /* MenuPicker.swift in Sources */,
+				47E4BDD02D1C840E00AABFD7 /* DynamicHeightTextField.swift in Sources */,
+				47E4BDD12D1C840E00AABFD7 /* InputField.swift in Sources */,
 				47FA7AA72D11790000B8ADD3 /* SwiftUIViewWebView.swift in Sources */,
 				47FA7AF22D11B32D00B8ADD3 /* TreeItem.swift in Sources */,
 				47FA7AA92D11790000B8ADD3 /* Colors.generated.swift in Sources */,
