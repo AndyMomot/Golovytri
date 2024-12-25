@@ -22,8 +22,8 @@ struct NextButton: View {
                     .hidden(!borders)
                 
                 Group {
-                    Rectangle()
-                        .fill(Colors.greenCustom.swiftUIColor)
+                    Asset.nextButtonBg.swiftUIImage
+                        .resizable()
                         .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
                     
                     Text(title)

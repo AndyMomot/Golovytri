@@ -16,19 +16,24 @@ struct TabBar: View {
     
     var body: some View {
         ZStack {
-            Color.white
+            Color.greenCustom
                 .ignoresSafeArea()
             
             VStack(spacing: .zero) {
                 TabView(selection: $viewModel.selection) {
-                    Text("Tab 1")
-                        .tag(TabBarSelectionView.list.rawValue)
+                    NavigationStack {
+                        HomeView()
+                            .tag(TabBarSelectionView.tree.rawValue)
+                    }
                     
                     Text("Tab 2")
-                        .tag(TabBarSelectionView.timer.rawValue)
+                        .tag(TabBarSelectionView.calculator.rawValue)
                     
                     Text("Tab 3")
                         .tag(TabBarSelectionView.statistics.rawValue)
+                    
+                    Text("Tab 4")
+                        .tag(TabBarSelectionView.settings.rawValue)
                 }
                 
                 Spacer()

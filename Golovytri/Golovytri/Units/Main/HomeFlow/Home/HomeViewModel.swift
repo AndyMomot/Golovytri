@@ -10,7 +10,10 @@ import Foundation
 extension HomeView {
     final class ViewModel: ObservableObject {
         @Published var people: [Person] = []
+        @Published var priority: PersonPriority?
         @Published var treeItems: [TreeItem] = []
+        
+        @Published var showAddTask = false
         
         init() {
             getPeople()

@@ -14,7 +14,6 @@ struct Person: Identifiable, Codable {
     var days, budget: Int
     var resources: String
     var priority: PersonPriority
-    var dependencyPersoneId: String?
     var description: String
 }
 

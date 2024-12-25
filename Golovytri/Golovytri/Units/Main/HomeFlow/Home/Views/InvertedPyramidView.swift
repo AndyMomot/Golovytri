@@ -11,6 +11,8 @@ struct InvertedPyramidView: View {
     let people: [TreeItem]
     var priority: PersonPriority?
     
+    var onSelect: (TreeItem) -> Void
+    
     var body: some View {
         VStack(spacing: 10) {
             ForEach(levels().reversed(), id: \.self) { level in
@@ -21,9 +23,13 @@ struct InvertedPyramidView: View {
                             return person.priority == self.priority ? 1 : 0.2
                         }
                         
-                        TreeCell(person: person)
-                            .frame(width: 50, height: 50)
-                            .opacity(opacity)
+                        Button {
+                            onSelect(person)
+                        } label: {
+                            TreeCell(person: person)
+                                .frame(width: 50, height: 50)
+                                .opacity(opacity)
+                        }
                     }
                 }
             }
@@ -63,5 +69,5 @@ struct InvertedPyramidView: View {
         .init(id: "7", priority: .medium),
         .init(id: "8", priority: .high),
         .init(id: "9", priority: .high)
-    ], priority: .high)
+    ], priority: .high) {_ in}
 }

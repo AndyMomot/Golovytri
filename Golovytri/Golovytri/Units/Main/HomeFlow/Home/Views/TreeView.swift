@@ -9,7 +9,9 @@ import SwiftUI
 
 struct TreeView: View {
     var people: [TreeItem]
-    @State var priority: PersonPriority?
+    @Binding var priority: PersonPriority?
+    
+    var onSelect: (TreeItem) -> Void
     
     var body: some View {
         ZStack {
@@ -28,7 +30,8 @@ struct TreeView: View {
                         .scaledToFit()
                     
                     InvertedPyramidView(people: people,
-                                        priority: priority)
+                                        priority: priority,
+                                        onSelect: onSelect)
                 }
                 .overlay {
                     VStack {
@@ -78,5 +81,5 @@ struct TreeView: View {
             .init(id: "21", priority: .low),
         .init(id: "22", priority: .medium),
         .init(id: "23", priority: .high),
-    ])
+    ], priority: .constant(nil)) {_ in}
 }

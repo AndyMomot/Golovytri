@@ -11,9 +11,10 @@ struct TabBarCustomView: View {
     @Binding var selectedItem: Int
     
     private let items: [TabBar.Item] = [
-        .init(imageName: Asset.listTab.name, title: "Lista"),
-        .init(imageName: Asset.timerTab.name, title: "Regulator czasowy"),
-        .init(imageName: Asset.statisticsTab.name, title: "Statystyka"),
+        .init(imageName: Asset.tab1.name, title: "Strom"),
+        .init(imageName: Asset.tab2.name, title: "Kalkulačka"),
+        .init(imageName: Asset.tab3.name, title: "Statistiky"),
+        .init(imageName: Asset.tab5.name, title: "Strom")
     ]
     
     private var arrange: [Int] {
@@ -38,15 +39,17 @@ struct TabBarCustomView: View {
                         .renderingMode(.template)
                         .resizable()
                         .scaledToFit()
-                        .foregroundStyle(isSelected ? .white : .green)
-                        .frame(width: 42, height: 42, alignment: .center)
+                        .foregroundStyle(isSelected ? .white : .darkBlue)
+                        .frame(minWidth: 30)
                     
-                    Text(item.title)
-                        .foregroundStyle(isSelected ? .white : .green)
-                        .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 16))
-                        .multilineTextAlignment(.center)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                    if isSelected {
+                        Text(item.title)
+                            .foregroundStyle(isSelected ? .white : .green)
+                            .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 16))
+                            .multilineTextAlignment(.center)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
+                    }
                 }
                 .onTapGesture {
                     withAnimation(.easeInOut(duration: 0.3)) {

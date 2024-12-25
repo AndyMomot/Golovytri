@@ -10,7 +10,7 @@ import SwiftUI
 
 extension TabBar {
     final class TabBarViewModel: ObservableObject {
-        @Published var selection = TabBarSelectionView.list.rawValue
+        @Published var selection = TabBarSelectionView.tree.rawValue
         @Published var isShowTabBar = true
         
         func showTabBar(_ show: Bool) {
@@ -23,9 +23,10 @@ extension TabBar {
 
 extension TabBar {
     enum TabBarSelectionView: Int {
-        case list = 0
-        case timer
+        case tree = 0
+        case calculator
         case statistics
+        case settings
     }
     
     struct Item: Identifiable {

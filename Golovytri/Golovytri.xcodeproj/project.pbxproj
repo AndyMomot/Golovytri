@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E4BDB42D1C6E0F00AABFD7 /* InvertedPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */; };
+		47E4BDB52D1C6E0F00AABFD7 /* TreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */; };
+		47E4BDB62D1C6E0F00AABFD7 /* TreePriorityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */; };
+		47E4BDB72D1C6E0F00AABFD7 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */; };
+		47E4BDB82D1C6E0F00AABFD7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDB02D1C6E0F00AABFD7 /* HomeView.swift */; };
+		47E4BDB92D1C6E0F00AABFD7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */; };
+		47E4BDC42D1C6E8D00AABFD7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */; };
+		47E4BDC52D1C6E8D00AABFD7 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */; };
 		47FA7A982D11790000B8ADD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A262D11790000B8ADD3 /* AppDelegate.swift */; };
 		47FA7A992D11790000B8ADD3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A272D11790000B8ADD3 /* RootViewController.swift */; };
 		47FA7A9A2D11790000B8ADD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A282D11790000B8ADD3 /* SceneDelegate.swift */; };
@@ -55,16 +63,18 @@
 		47FA7ADC2D11790000B8ADD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FA7A962D11790000B8ADD3 /* LaunchScreen.storyboard */; };
 		47FA7ADE2D11791500B8ADD3 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 47FA7ADD2D11791500B8ADD3 /* swiftgen.yml */; };
 		47FA7AE22D11ABCD00B8ADD3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AE12D11ABCD00B8ADD3 /* Person.swift */; };
-		47FA7AEC2D11B16200B8ADD3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AEA2D11B16200B8ADD3 /* TreeView.swift */; };
-		47FA7AEE2D11B2F900B8ADD3 /* TreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AED2D11B2F900B8ADD3 /* TreeCell.swift */; };
-		47FA7AF02D11B31500B8ADD3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AEF2D11B31500B8ADD3 /* HomeView.swift */; };
 		47FA7AF22D11B32D00B8ADD3 /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AF12D11B32D00B8ADD3 /* TreeItem.swift */; };
-		47FA7AF42D11B8B900B8ADD3 /* InvertedPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AF32D11B8B800B8ADD3 /* InvertedPyramidView.swift */; };
-		47FA7AF62D11BF7800B8ADD3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AF52D11BF7800B8ADD3 /* HomeViewModel.swift */; };
-		47FA7AF82D11C37E00B8ADD3 /* TreePriorityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7AF72D11C37E00B8ADD3 /* TreePriorityPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedPyramidView.swift; sourceTree = "<group>"; };
+		47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeCell.swift; sourceTree = "<group>"; };
+		47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePriorityPicker.swift; sourceTree = "<group>"; };
+		47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		47E4BDB02D1C6E0F00AABFD7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		47FA795F2D11767000B8ADD3 /* Golovytri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golovytri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FA7A262D11790000B8ADD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FA7A272D11790000B8ADD3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -115,13 +125,7 @@
 		47FA7A952D11790000B8ADD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47FA7ADD2D11791500B8ADD3 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		47FA7AE12D11ABCD00B8ADD3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		47FA7AEA2D11B16200B8ADD3 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
-		47FA7AED2D11B2F900B8ADD3 /* TreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeCell.swift; sourceTree = "<group>"; };
-		47FA7AEF2D11B31500B8ADD3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		47FA7AF12D11B32D00B8ADD3 /* TreeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeItem.swift; sourceTree = "<group>"; };
-		47FA7AF32D11B8B800B8ADD3 /* InvertedPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedPyramidView.swift; sourceTree = "<group>"; };
-		47FA7AF52D11BF7800B8ADD3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		47FA7AF72D11C37E00B8ADD3 /* TreePriorityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePriorityPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47E4BDAF2D1C6E0F00AABFD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */,
+				47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */,
+				47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */,
+				47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47E4BDB22D1C6E0F00AABFD7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDAF2D1C6E0F00AABFD7 /* Views */,
+				47E4BDB02D1C6E0F00AABFD7 /* HomeView.swift */,
+				47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		47E4BDB32D1C6E0F00AABFD7 /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDC32D1C6E8D00AABFD7 /* Task */,
+				47E4BDB22D1C6E0F00AABFD7 /* Home */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		47E4BDC32D1C6E8D00AABFD7 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */,
+				47E4BDC22D1C6E8D00AABFD7 /* TaskViewModel.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 		47FA79562D11767000B8ADD3 = {
 			isa = PBXGroup;
 			children = (
@@ -356,7 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				47FA7A752D11790000B8ADD3 /* TabBar */,
-				47FA7AE42D11B0D100B8ADD3 /* Home */,
+				47E4BDB32D1C6E0F00AABFD7 /* HomeFlow */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -439,27 +482,6 @@
 				47FA7A962D11790000B8ADD3 /* LaunchScreen.storyboard */,
 			);
 			path = Golovytri;
-			sourceTree = "<group>";
-		};
-		47FA7AE42D11B0D100B8ADD3 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				47FA7AEB2D11B16200B8ADD3 /* Views */,
-				47FA7AEF2D11B31500B8ADD3 /* HomeView.swift */,
-				47FA7AF52D11BF7800B8ADD3 /* HomeViewModel.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		47FA7AEB2D11B16200B8ADD3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				47FA7AEA2D11B16200B8ADD3 /* TreeView.swift */,
-				47FA7AF32D11B8B800B8ADD3 /* InvertedPyramidView.swift */,
-				47FA7AED2D11B2F900B8ADD3 /* TreeCell.swift */,
-				47FA7AF72D11C37E00B8ADD3 /* TreePriorityPicker.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,22 +597,18 @@
 				47FA7A992D11790000B8ADD3 /* RootViewController.swift in Sources */,
 				47FA7A9A2D11790000B8ADD3 /* SceneDelegate.swift in Sources */,
 				47FA7A9B2D11790000B8ADD3 /* Date+Additions.swift in Sources */,
-				47FA7AF42D11B8B900B8ADD3 /* InvertedPyramidView.swift in Sources */,
 				47FA7A9C2D11790000B8ADD3 /* Double+Additions.swift in Sources */,
 				47FA7A9D2D11790000B8ADD3 /* String+Additions.swift in Sources */,
 				47FA7A9E2D11790000B8ADD3 /* UINavigationController+Additions.swift in Sources */,
 				47FA7A9F2D11790000B8ADD3 /* View+Additions.swift in Sources */,
 				47FA7AA02D11790000B8ADD3 /* ImagePicker.swift in Sources */,
-				47FA7AF02D11B31500B8ADD3 /* HomeView.swift in Sources */,
 				47FA7AE22D11ABCD00B8ADD3 /* Person.swift in Sources */,
-				47FA7AEE2D11B2F900B8ADD3 /* TreeCell.swift in Sources */,
 				47FA7AA12D11790000B8ADD3 /* ShareSheet.swift in Sources */,
 				47FA7AA22D11790000B8ADD3 /* BackButton.swift in Sources */,
 				47FA7AA32D11790000B8ADD3 /* CircularProgressBar.swift in Sources */,
 				47FA7AA42D11790000B8ADD3 /* CustomTextField.swift in Sources */,
 				47FA7AA52D11790000B8ADD3 /* DotsProgressView.swift in Sources */,
 				47FA7AA62D11790000B8ADD3 /* NextButton.swift in Sources */,
-				47FA7AF82D11C37E00B8ADD3 /* TreePriorityPicker.swift in Sources */,
 				47FA7AA72D11790000B8ADD3 /* SwiftUIViewWebView.swift in Sources */,
 				47FA7AF22D11B32D00B8ADD3 /* TreeItem.swift in Sources */,
 				47FA7AA92D11790000B8ADD3 /* Colors.generated.swift in Sources */,
@@ -600,16 +618,22 @@
 				47FA7AAD2D11790000B8ADD3 /* FileManager+Image.swift in Sources */,
 				47FA7AAE2D11790000B8ADD3 /* FileManagerService.swift in Sources */,
 				47FA7ABB2D11790000B8ADD3 /* TabBar.swift in Sources */,
+				47E4BDC42D1C6E8D00AABFD7 /* TaskView.swift in Sources */,
+				47E4BDC52D1C6E8D00AABFD7 /* TaskViewModel.swift in Sources */,
 				47FA7ABC2D11790000B8ADD3 /* TabBarCustomView.swift in Sources */,
 				47FA7ABD2D11790000B8ADD3 /* TabBarViewModel.swift in Sources */,
 				47FA7AC62D11790000B8ADD3 /* OnboardingView.swift in Sources */,
+				47E4BDB42D1C6E0F00AABFD7 /* InvertedPyramidView.swift in Sources */,
+				47E4BDB52D1C6E0F00AABFD7 /* TreeCell.swift in Sources */,
+				47E4BDB62D1C6E0F00AABFD7 /* TreePriorityPicker.swift in Sources */,
+				47E4BDB72D1C6E0F00AABFD7 /* TreeView.swift in Sources */,
+				47E4BDB82D1C6E0F00AABFD7 /* HomeView.swift in Sources */,
+				47E4BDB92D1C6E0F00AABFD7 /* HomeViewModel.swift in Sources */,
 				47FA7AC72D11790000B8ADD3 /* OnboardingViewModel.swift in Sources */,
 				47FA7AC82D11790000B8ADD3 /* OnboardingViewTabView.swift in Sources */,
 				47FA7AC92D11790000B8ADD3 /* PreloaderView.swift in Sources */,
-				47FA7AF62D11BF7800B8ADD3 /* HomeViewModel.swift in Sources */,
 				47FA7ACA2D11790000B8ADD3 /* PrivacyView.swift in Sources */,
 				47FA7ACC2D11790000B8ADD3 /* RootContentView.swift in Sources */,
-				47FA7AEC2D11B16200B8ADD3 /* TreeView.swift in Sources */,
 				47FA7ACD2D11790000B8ADD3 /* RootContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
