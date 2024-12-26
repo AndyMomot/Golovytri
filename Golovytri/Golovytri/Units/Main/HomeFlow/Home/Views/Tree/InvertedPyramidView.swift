@@ -15,6 +15,7 @@ struct InvertedPyramidView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            Spacer()
             ForEach(levels().reversed(), id: \.self) { level in
                 HStack(spacing: 10) {
                     ForEach(level, id: \.self) { person in

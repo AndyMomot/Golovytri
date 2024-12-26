@@ -33,7 +33,9 @@ struct TaskView: View {
                     
                     if viewModel.isEditing {
                         Button {
-                            dismiss.callAsFunction()
+                            viewModel.delete(state: viewState) {
+                                dismiss.callAsFunction()
+                            }
                         } label: {
                             Image(systemName: "trash")
                             
@@ -108,9 +110,14 @@ struct TaskView: View {
                                                 .stroke(.darkBlue, lineWidth: 1)
                                         }
                                     
-                                    DatePicker("", selection: $viewModel.date,
-                                               in: Date()...,
-                                               displayedComponents: .date)
+                                    HStack {
+                                        DatePicker("", selection: $viewModel.date,
+                                                   in: Date()...,
+                                                   displayedComponents: .date)
+                                        .frame(maxWidth: UIScreen.main.bounds.width * 0.3, alignment: .leading)
+                                        
+                                        Spacer()
+                                    }
                                     .padding(8)
                                 }
                             }
@@ -124,7 +131,7 @@ struct TaskView: View {
                             .keyboardType(.numberPad)
                             
                             InputField(title: "Další zdroje",
-                                       text: $viewModel.budget)
+                                       text: $viewModel.resources)
                             
                             MenuPicker(title: "Priorita úlohy",
                                        items: viewModel.priorityItems,
@@ -137,7 +144,9 @@ struct TaskView: View {
                             // Buttons
                             
                             NextButton(title: "Uložit") {
-                                
+                                viewModel.save(state: viewState) {
+                                    dismiss.callAsFunction()
+                                }
                             }
                         }
                         .padding()
@@ -146,9 +155,12 @@ struct TaskView: View {
                 }
             }
         }
+        .hideKeyboardWhenTappedAround()
         .navigationBarBackButtonHidden()
         .onAppear {
-            viewModel.configure(state: viewState)
+            withAnimation {
+                viewModel.configure(state: viewState)
+            }
         }
         .sheet(isPresented: $viewModel.showImagePicker) {
             ImagePicker(selectedImage: $viewModel.image)
@@ -165,4 +177,8 @@ struct TaskView: View {
         resources: "resources",
         priority: .high,
         description: "description")))
+}
+
+#Preview {
+    TaskView(viewState: .add)
 }

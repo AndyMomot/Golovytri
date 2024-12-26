@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47E4BDB42D1C6E0F00AABFD7 /* InvertedPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */; };
-		47E4BDB52D1C6E0F00AABFD7 /* TreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */; };
-		47E4BDB62D1C6E0F00AABFD7 /* TreePriorityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */; };
-		47E4BDB72D1C6E0F00AABFD7 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */; };
 		47E4BDB82D1C6E0F00AABFD7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDB02D1C6E0F00AABFD7 /* HomeView.swift */; };
 		47E4BDB92D1C6E0F00AABFD7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */; };
 		47E4BDC42D1C6E8D00AABFD7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */; };
@@ -18,6 +14,11 @@
 		47E4BDD02D1C840E00AABFD7 /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDCC2D1C840E00AABFD7 /* DynamicHeightTextField.swift */; };
 		47E4BDD12D1C840E00AABFD7 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDCE2D1C840E00AABFD7 /* InputField.swift */; };
 		47E4BDD72D1C8D5600AABFD7 /* MenuPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */; };
+		47E4BE202D1DD16900AABFD7 /* InvertedPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BE1B2D1DD16900AABFD7 /* InvertedPyramidView.swift */; };
+		47E4BE212D1DD16900AABFD7 /* TreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BE1C2D1DD16900AABFD7 /* TreeCell.swift */; };
+		47E4BE222D1DD16900AABFD7 /* TreePriorityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BE1D2D1DD16900AABFD7 /* TreePriorityPicker.swift */; };
+		47E4BE232D1DD16900AABFD7 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BE1E2D1DD16900AABFD7 /* TreeView.swift */; };
+		47E4BE252D1DD17500AABFD7 /* PersoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4BE242D1DD17500AABFD7 /* PersoneCell.swift */; };
 		47FA7A982D11790000B8ADD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A262D11790000B8ADD3 /* AppDelegate.swift */; };
 		47FA7A992D11790000B8ADD3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A272D11790000B8ADD3 /* RootViewController.swift */; };
 		47FA7A9A2D11790000B8ADD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA7A282D11790000B8ADD3 /* SceneDelegate.swift */; };
@@ -70,10 +71,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedPyramidView.swift; sourceTree = "<group>"; };
-		47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeCell.swift; sourceTree = "<group>"; };
-		47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePriorityPicker.swift; sourceTree = "<group>"; };
-		47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 		47E4BDB02D1C6E0F00AABFD7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		47E4BDB12D1C6E0F00AABFD7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		47E4BDC12D1C6E8D00AABFD7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
@@ -81,6 +78,11 @@
 		47E4BDCC2D1C840E00AABFD7 /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
 		47E4BDCE2D1C840E00AABFD7 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPicker.swift; sourceTree = "<group>"; };
+		47E4BE1B2D1DD16900AABFD7 /* InvertedPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedPyramidView.swift; sourceTree = "<group>"; };
+		47E4BE1C2D1DD16900AABFD7 /* TreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeCell.swift; sourceTree = "<group>"; };
+		47E4BE1D2D1DD16900AABFD7 /* TreePriorityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePriorityPicker.swift; sourceTree = "<group>"; };
+		47E4BE1E2D1DD16900AABFD7 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		47E4BE242D1DD17500AABFD7 /* PersoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneCell.swift; sourceTree = "<group>"; };
 		47FA795F2D11767000B8ADD3 /* Golovytri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golovytri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FA7A262D11790000B8ADD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FA7A272D11790000B8ADD3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -148,10 +150,8 @@
 		47E4BDAF2D1C6E0F00AABFD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				47E4BDAB2D1C6E0F00AABFD7 /* InvertedPyramidView.swift */,
-				47E4BDAC2D1C6E0F00AABFD7 /* TreeCell.swift */,
-				47E4BDAD2D1C6E0F00AABFD7 /* TreePriorityPicker.swift */,
-				47E4BDAE2D1C6E0F00AABFD7 /* TreeView.swift */,
+				47E4BE1F2D1DD16900AABFD7 /* Tree */,
+				47E4BE242D1DD17500AABFD7 /* PersoneCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +206,17 @@
 				47E4BDD52D1C8D5600AABFD7 /* MenuPicker.swift */,
 			);
 			path = MenuPicker;
+			sourceTree = "<group>";
+		};
+		47E4BE1F2D1DD16900AABFD7 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				47E4BE1B2D1DD16900AABFD7 /* InvertedPyramidView.swift */,
+				47E4BE1C2D1DD16900AABFD7 /* TreeCell.swift */,
+				47E4BE1D2D1DD16900AABFD7 /* TreePriorityPicker.swift */,
+				47E4BE1E2D1DD16900AABFD7 /* TreeView.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 		47FA79562D11767000B8ADD3 = {
@@ -642,6 +653,10 @@
 				47FA7AA42D11790000B8ADD3 /* CustomTextField.swift in Sources */,
 				47FA7AA52D11790000B8ADD3 /* DotsProgressView.swift in Sources */,
 				47FA7AA62D11790000B8ADD3 /* NextButton.swift in Sources */,
+				47E4BE202D1DD16900AABFD7 /* InvertedPyramidView.swift in Sources */,
+				47E4BE212D1DD16900AABFD7 /* TreeCell.swift in Sources */,
+				47E4BE222D1DD16900AABFD7 /* TreePriorityPicker.swift in Sources */,
+				47E4BE232D1DD16900AABFD7 /* TreeView.swift in Sources */,
 				47E4BDD72D1C8D5600AABFD7 /* MenuPicker.swift in Sources */,
 				47E4BDD02D1C840E00AABFD7 /* DynamicHeightTextField.swift in Sources */,
 				47E4BDD12D1C840E00AABFD7 /* InputField.swift in Sources */,
@@ -656,13 +671,10 @@
 				47FA7ABB2D11790000B8ADD3 /* TabBar.swift in Sources */,
 				47E4BDC42D1C6E8D00AABFD7 /* TaskView.swift in Sources */,
 				47E4BDC52D1C6E8D00AABFD7 /* TaskViewModel.swift in Sources */,
+				47E4BE252D1DD17500AABFD7 /* PersoneCell.swift in Sources */,
 				47FA7ABC2D11790000B8ADD3 /* TabBarCustomView.swift in Sources */,
 				47FA7ABD2D11790000B8ADD3 /* TabBarViewModel.swift in Sources */,
 				47FA7AC62D11790000B8ADD3 /* OnboardingView.swift in Sources */,
-				47E4BDB42D1C6E0F00AABFD7 /* InvertedPyramidView.swift in Sources */,
-				47E4BDB52D1C6E0F00AABFD7 /* TreeCell.swift in Sources */,
-				47E4BDB62D1C6E0F00AABFD7 /* TreePriorityPicker.swift in Sources */,
-				47E4BDB72D1C6E0F00AABFD7 /* TreeView.swift in Sources */,
 				47E4BDB82D1C6E0F00AABFD7 /* HomeView.swift in Sources */,
 				47E4BDB92D1C6E0F00AABFD7 /* HomeViewModel.swift in Sources */,
 				47FA7AC72D11790000B8ADD3 /* OnboardingViewModel.swift in Sources */,

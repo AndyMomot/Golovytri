@@ -30,11 +30,11 @@ struct HomeView: View {
                         .ignoresSafeArea()
         
                     ScrollView {
-                        VStack {
+                        VStack(spacing: 20) {
                             VStack(spacing: .zero) {
                                 TreeView(people: viewModel.treeItems,
-                                         priority: $viewModel.priority) { _ in
-                                    
+                                         priority: $viewModel.priority) { person in
+                                    viewModel.onSelectTreeItem(person)
                                 }
                                 
                                 ZStack {
@@ -48,14 +48,38 @@ struct HomeView: View {
                                     .padding(.bottom)
                                 }
                             }
+                            
+                            VStack(spacing: 15) {
+                                ForEach(viewModel.peopleForList) { person in
+                                    Button {
+                                        viewModel.onSelectPerson(person)
+                                    } label: {
+                                        PersoneCell(person: person)
+                                    }
+                                }
+                            }
+                            .padding(.horizontal)
                         }
                     }
                     .scrollIndicators(.never)
                 }
             }
         }
+        .onAppear {
+            viewModel.getPeople()
+        }
+        .onChange(of: viewModel.priority) { _ in
+            withAnimation {
+                viewModel.getPeople()
+            }
+        }
         .navigationDestination(isPresented: $viewModel.showAddTask) {
             TaskView(viewState: .add)
+        }
+        .navigationDestination(isPresented: $viewModel.showPersonDetails) {
+            if let personToShow = viewModel.personToShow {
+                TaskView(viewState: .edit(personToShow))
+            }
         }
     }
 }
