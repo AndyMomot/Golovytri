@@ -26,7 +26,7 @@ struct TabBar: View {
                             .tag(TabBarSelectionView.tree.rawValue)
                     }
                     
-                    Text("Tab 2")
+                    CalculatorView()
                         .tag(TabBarSelectionView.calculator.rawValue)
                     
                     Text("Tab 3")

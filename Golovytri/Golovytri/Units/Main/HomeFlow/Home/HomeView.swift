@@ -54,7 +54,7 @@ struct HomeView: View {
                                     Button {
                                         viewModel.onSelectPerson(person)
                                     } label: {
-                                        PersoneCell(person: person)
+                                        PersonCell(person: person)
                                     }
                                 }
                             }
