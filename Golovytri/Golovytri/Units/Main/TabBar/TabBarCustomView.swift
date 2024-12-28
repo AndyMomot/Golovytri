@@ -40,7 +40,7 @@ struct TabBarCustomView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(isSelected ? .white : .darkBlue)
-                        .frame(minWidth: 30)
+                        .frame(width: isSelected ? 50 : 30)
                     
                     if isSelected {
                         Text(item.title)
@@ -52,8 +52,10 @@ struct TabBarCustomView: View {
                     }
                 }
                 .onTapGesture {
-                    withAnimation(.easeInOut(duration: 0.3)) {
-                        selectedItem = index
+                    DispatchQueue.main.async {
+                        withAnimation {
+                            selectedItem = index
+                        }
                     }
                 }
                 

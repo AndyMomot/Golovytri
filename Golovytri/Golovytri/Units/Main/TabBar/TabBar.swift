@@ -21,10 +21,8 @@ struct TabBar: View {
             
             VStack(spacing: .zero) {
                 TabView(selection: $viewModel.selection) {
-                    NavigationStack {
-                        HomeView()
-                            .tag(TabBarSelectionView.tree.rawValue)
-                    }
+                    HomeView()
+                        .tag(TabBarSelectionView.tree.rawValue)
                     
                     CalculatorView()
                         .tag(TabBarSelectionView.calculator.rawValue)
@@ -32,7 +30,7 @@ struct TabBar: View {
                     StatisticsView()
                         .tag(TabBarSelectionView.statistics.rawValue)
                     
-                    Text("Tab 4")
+                    SettingsView()
                         .tag(TabBarSelectionView.settings.rawValue)
                 }
                 
