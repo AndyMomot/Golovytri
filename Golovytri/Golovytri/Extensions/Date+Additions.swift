@@ -57,6 +57,14 @@ extension Date {
         let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
         return calendar.date(from: components)!
     }
+    
+    func format(to format: Format) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format.rawValue
+        
+        let dateString = self.toString(format: format)
+        return dateFormatter.date(from: dateString)
+    }
 }
 
 extension Date {
